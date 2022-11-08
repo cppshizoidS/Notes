@@ -1,0 +1,150 @@
+2022-11-08 22:50:05.231 -08:00 [INF] Entity Framework Core 5.0.5 initialized 'NotesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-11-08 22:50:05.501 -08:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2022-11-08 22:50:05.571 -08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Notes" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Notes" PRIMARY KEY,
+    "UserId" TEXT NOT NULL,
+    "Title" TEXT NULL,
+    "Details" TEXT NULL,
+    "CreationDate" TEXT NOT NULL,
+    "EditDate" TEXT NULL
+);
+2022-11-08 22:50:05.571 -08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Notes_Id" ON "Notes" ("Id");
+2022-11-08 22:50:05.658 -08:00 [INF] User profile is available. Using 'C:\Users\alexa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-08 22:50:05.899 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-08 22:50:05.899 -08:00 [INF] Hosting environment: Development
+2022-11-08 22:50:05.899 -08:00 [INF] Content root path: C:\Users\alexa\Source\Repos\Notes\Notes.Backend\Notes.WebApi
+2022-11-08 22:50:05.932 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2022-11-08 22:50:05.987 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 301 - - 56.0496ms
+2022-11-08 22:50:05.988 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-11-08 22:50:06.140 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 151.0478ms
+2022-11-08 22:50:06.143 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui.css - -
+2022-11-08 22:50:06.144 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - -
+2022-11-08 22:50:06.144 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - -
+2022-11-08 22:50:06.144 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-11-08 22:50:06.147 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 3.0872ms
+2022-11-08 22:50:06.157 -08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-08 22:50:06.157 -08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-08 22:50:06.157 -08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-08 22:50:06.159 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui.css - - - 200 143410 text/css 15.8904ms
+2022-11-08 22:50:06.164 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-standalone-preset.js - - - 200 336841 application/javascript 20.4273ms
+2022-11-08 22:50:06.179 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-11-08 22:50:06.182 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger-ui-bundle.js - - - 200 1097461 application/javascript 38.2974ms
+2022-11-08 22:50:06.215 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.0209ms
+2022-11-08 22:50:06.341 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-11-08 22:50:06.367 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/favicon-32x32.png - -
+2022-11-08 22:50:06.367 -08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-11-08 22:50:06.367 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/favicon-32x32.png - - - 200 628 image/png 0.4641ms
+2022-11-08 22:50:06.401 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 59.9028ms
+2022-11-08 22:50:38.946 -08:00 [INF] Entity Framework Core 5.0.5 initialized 'NotesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-11-08 22:50:39.032 -08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-11-08 22:50:39.046 -08:00 [INF] User profile is available. Using 'C:\Users\alexa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-08 22:50:39.148 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-08 22:50:39.148 -08:00 [INF] Hosting environment: Development
+2022-11-08 22:50:39.148 -08:00 [INF] Content root path: C:\Users\alexa\Source\Repos\Notes\Notes.Backend\Notes.WebApi
+2022-11-08 22:50:39.160 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-11-08 22:50:39.270 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 111.3504ms
+2022-11-08 22:50:39.302 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-11-08 22:50:39.304 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 2.2616ms
+2022-11-08 22:50:39.311 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-11-08 22:50:39.336 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.9199ms
+2022-11-08 22:50:39.481 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-11-08 22:50:39.539 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 58.1976ms
+2022-11-08 22:52:27.444 -08:00 [INF] Entity Framework Core 5.0.5 initialized 'NotesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-11-08 22:52:27.530 -08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-11-08 22:52:27.545 -08:00 [INF] User profile is available. Using 'C:\Users\alexa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-08 22:52:27.640 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-08 22:52:27.640 -08:00 [INF] Hosting environment: Development
+2022-11-08 22:52:27.640 -08:00 [INF] Content root path: C:\Users\alexa\Source\Repos\Notes\Notes.Backend\Notes.WebApi
+2022-11-08 22:52:27.653 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-11-08 22:52:27.764 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 112.0942ms
+2022-11-08 22:52:27.787 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-11-08 22:52:27.789 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 2.0814ms
+2022-11-08 22:52:27.803 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-11-08 22:52:27.828 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.5979ms
+2022-11-08 22:52:27.912 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-11-08 22:52:27.970 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 58.3539ms
+2022-11-08 22:52:40.607 -08:00 [INF] Entity Framework Core 5.0.5 initialized 'NotesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-11-08 22:52:40.699 -08:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-11-08 22:52:40.720 -08:00 [INF] User profile is available. Using 'C:\Users\alexa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-08 22:52:40.822 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-08 22:52:40.822 -08:00 [INF] Hosting environment: Development
+2022-11-08 22:52:40.822 -08:00 [INF] Content root path: C:\Users\alexa\Source\Repos\Notes\Notes.Backend\Notes.WebApi
+2022-11-08 22:52:40.835 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-11-08 22:52:40.950 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 116.5729ms
+2022-11-08 22:52:40.960 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-11-08 22:52:40.960 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-11-08 22:52:40.962 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 2.1885ms
+2022-11-08 22:52:40.985 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.3420ms
+2022-11-08 22:52:41.116 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-11-08 22:52:41.183 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 67.2776ms
+2022-11-08 23:01:17.832 -08:00 [INF] Entity Framework Core 5.0.5 initialized 'NotesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-11-08 23:01:17.917 -08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-11-08 23:01:17.932 -08:00 [INF] User profile is available. Using 'C:\Users\alexa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-08 23:01:18.025 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-08 23:01:18.025 -08:00 [INF] Hosting environment: Development
+2022-11-08 23:01:18.025 -08:00 [INF] Content root path: C:\Users\alexa\Source\Repos\Notes\Notes.Backend\Notes.WebApi
+2022-11-08 23:01:18.037 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-11-08 23:01:18.149 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 113.1900ms
+2022-11-08 23:01:18.174 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-11-08 23:01:18.177 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 2.7552ms
+2022-11-08 23:01:18.196 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-11-08 23:01:18.220 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.6323ms
+2022-11-08 23:01:18.306 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-11-08 23:01:18.362 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 56.3753ms
+2022-11-08 23:01:47.897 -08:00 [INF] Entity Framework Core 5.0.5 initialized 'NotesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-11-08 23:01:48.066 -08:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-11-08 23:01:48.134 -08:00 [INF] User profile is available. Using 'C:\Users\alexa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-08 23:01:48.360 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-08 23:01:48.360 -08:00 [INF] Hosting environment: Development
+2022-11-08 23:01:48.360 -08:00 [INF] Content root path: C:\Users\alexa\Source\Repos\Notes\Notes.Backend\Notes.WebApi
+2022-11-08 23:01:48.403 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-11-08 23:01:48.589 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 187.2057ms
+2022-11-08 23:01:48.597 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-11-08 23:01:48.607 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 9.5103ms
+2022-11-08 23:01:48.620 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-11-08 23:01:48.650 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.4370ms
+2022-11-08 23:01:48.743 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-11-08 23:01:48.837 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.7434ms
+2022-11-08 23:03:24.436 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/api/2/Note - -
+2022-11-08 23:03:24.842 -08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-11-08 23:03:24.848 -08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-11-08 23:03:24.849 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/api/2/Note - - - 401 - - 413.7237ms
+2022-11-08 23:13:41.436 -08:00 [INF] Entity Framework Core 5.0.5 initialized 'NotesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-11-08 23:13:41.574 -08:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-11-08 23:13:41.613 -08:00 [INF] User profile is available. Using 'C:\Users\alexa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-08 23:13:41.780 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-08 23:13:41.780 -08:00 [INF] Hosting environment: Development
+2022-11-08 23:13:41.780 -08:00 [INF] Content root path: C:\Users\alexa\Source\Repos\Notes\Notes.Backend\Notes.WebApi
+2022-11-08 23:13:41.805 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-11-08 23:13:41.967 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 163.2244ms
+2022-11-08 23:13:42.000 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-11-08 23:13:42.001 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-11-08 23:13:42.004 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 3.9076ms
+2022-11-08 23:13:42.034 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.5066ms
+2022-11-08 23:13:42.169 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-11-08 23:13:42.235 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 66.7964ms
+2022-11-08 23:14:27.959 -08:00 [INF] Entity Framework Core 5.0.5 initialized 'NotesDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+2022-11-08 23:14:28.109 -08:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2022-11-08 23:14:28.155 -08:00 [INF] User profile is available. Using 'C:\Users\alexa\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-08 23:14:28.332 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-08 23:14:28.332 -08:00 [INF] Hosting environment: Development
+2022-11-08 23:14:28.332 -08:00 [INF] Content root path: C:\Users\alexa\Source\Repos\Notes\Notes.Backend\Notes.WebApi
+2022-11-08 23:14:28.362 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/index.html - -
+2022-11-08 23:14:28.530 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/index.html - - - 200 - text/html;charset=utf-8 169.0470ms
+2022-11-08 23:14:28.585 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - -
+2022-11-08 23:14:28.586 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/_vs/browserLink - -
+2022-11-08 23:14:28.589 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 3.5375ms
+2022-11-08 23:14:28.625 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.2466ms
+2022-11-08 23:14:28.709 -08:00 [INF] Request starting HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - -
+2022-11-08 23:14:28.782 -08:00 [INF] Request finished HTTP/2 GET https://localhost:44397/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.6363ms
